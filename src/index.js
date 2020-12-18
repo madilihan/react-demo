@@ -3,6 +3,10 @@ import React from 'react'
 import ReactDom, { render } from 'react-dom'
 import App from './App'
 import LifyCycle from './LifyCycle'
+import NoControlInput from './NoControlInput'
+import ControlInput from './ControlInput'
+import FormSimple from './FormSimple'
+
 //* JSX - 到底是啥
 //* JSX = Javascript + Xml 对象 虚拟DOM元素
 //* {} == {{}}
@@ -62,7 +66,11 @@ function Welcome(props) {
 
 // // ReactDom.render(<Welcome name='Welcome' />,document.querySelector('#root'))
 // //ReactDom.render(<App name='你好' />,document.querySelector('#root'))
-ReactDom.render(<LifyCycle />,document.querySelector('#root'))
+// // ReactDom.render(<LifyCycle />,document.querySelector('#root'))
+// // ReactDom.render(<NoControlInput />,document.querySelector('#root'))
+// //ReactDom.render(<ControlInput />,document.querySelector('#root'))
+ReactDom.render(<FormSimple />,document.querySelector('#root'))
+
 
 
 
